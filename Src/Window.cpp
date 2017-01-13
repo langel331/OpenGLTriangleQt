@@ -159,6 +159,8 @@ void Window::paintGL() {
 	glViewport(0, 0, width(), height());
 	glUseProgram(programID);
 	glBindVertexArray(vao);
-	glDrawArrays(GL_TRIANGLES, 0, 3);
+	//glDrawArrays(GL_TRIANGLES, 0, 3);
+	glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_SHORT, 0);
+	//glDrawElements(GL_LINE_STRIP, 4, GL_UNSIGNED_SHORT, 0);
 	update();
 }
