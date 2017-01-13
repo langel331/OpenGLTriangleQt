@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\Src\main.cpp" />
+    <ClCompile Include="..\Src\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Src\Point.h" />
+    <ClInclude Include="..\Src\Window.h" />
+    <ClInclude Include="..\Src\Primatives\Vertex.h">
+      <Filter>Primatives</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Primatives">
+      <UniqueIdentifier>{58671807-93a5-4f8d-9668-b718c9534530}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Bin\Debug\FragmentShaderCode.glsl" />
+    <None Include="..\Bin\Debug\VertexShaderCode.glsl" />
+  </ItemGroup>
+</Project>
